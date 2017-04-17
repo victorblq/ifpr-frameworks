@@ -1,6 +1,4 @@
-package br.com.victor.factory;
-
-import br.com.victor.entity.IFlor;
+package br.com.victor.entity;
 
 public class Margarida implements IFlor
 {

@@ -1,7 +1,10 @@
 package br.com.victor.factory;
 
+import br.com.victor.entity.Crisantemo;
 import br.com.victor.entity.IFlor;
+import br.com.victor.entity.Margarida;
 import br.com.victor.entity.Orquidea;
+import br.com.victor.entity.Rosa;
 import br.com.victor.entity.TipoFlor;
 
 public class FlorFactory implements Factory
