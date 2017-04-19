@@ -9,6 +9,7 @@ import br.com.victor.entity.Revista;
 public class SuperInteressante implements Revista
 {
 	private List<Assinante> assinantes;
+	private boolean isNovaEdicao;
 
 	public SuperInteressante()
 	{
@@ -16,10 +17,9 @@ public class SuperInteressante implements Revista
 	}
 	
 	@Override
-	public void addAssinante()
+	public void addAssinante( Assinante assinante )
 	{
-		// TODO Auto-generated method stub
-		
+		this.assinantes.add( assinante );
 	}
 
 	@Override
@@ -27,8 +27,20 @@ public class SuperInteressante implements Revista
 	{
 		for( Assinante assinante: this.assinantes )
 		{
-			assinante.updateRevista( this );
+			assinante.update( this );
 		}
 	}
+	
+	public void temNovaEdicao( boolean isNovaEdicao )
+	{
+		this.isNovaEdicao = isNovaEdicao;
+		this.notifyAssinantes();
+	}
+	
+	public boolean getEdicao()
+	{
+		return this.isNovaEdicao;
+	}
+	
 
 }
