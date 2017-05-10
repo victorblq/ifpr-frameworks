@@ -1,0 +1,19 @@
+eclipse
+play 
+\q
+quit
+exit
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0")
+plugins
+projects
+project playframework
+eclipse
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0")
+plugin 
+plugin  com.typesafe.sbteclipse
+plugin  com.typesafe.sbteclipse 4.0.0
+exit
+project playframework
+compile
+eclipse
+exit
